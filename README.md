@@ -16,4 +16,4 @@
     your tests
 
 
-Read the omplete tutorial on [codesource](https://codesource.io/building-a-crud-application-using-preact/).
+Read the complete tutorial on [codesource](https://codesource.io/building-a-crud-application-using-preact/).
