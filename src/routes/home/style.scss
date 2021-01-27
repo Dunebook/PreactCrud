@@ -1,0 +1,108 @@
+.todo {
+  width: 600px;
+  margin: 100px auto;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.addInputWrapper {
+  display: flex;
+
+  & input {
+    font-size: 18px;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+    width: 80%;
+
+    &:focus {
+      background: #fff;
+      border: 3px solid #2980b9;
+      outline: none;
+    }
+  }
+
+  & button {
+    width: 20%;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s all ease-out;
+
+    &:enabled {
+      background: rgb(66, 199, 66);
+      border: none;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
+
+.filterWrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  & > button {
+    cursor: pointer;
+    width: 33.3%;
+    text-align: center;
+    border: 1px solid #cacaca;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.3s hover ease-out;
+
+    &.active {
+      background: rgb(202, 201, 201) !important;
+    }
+
+    &:hover {
+      background: rgb(226, 226, 226);
+    }
+  }
+}
+
+.todoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.todoListItem {
+  position: relative;
+  background: #51f51f79;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: normal;
+  transition: all 1s;
+  word-break: break-all;
+
+  &:nth-child(even) {
+    background: #e78c8c79;
+  }
+
+  & span {
+    height: 30px;
+  }
+
+  & svg {
+    height: 100%;
+    &:hover {
+      cursor: pointer;
+      & path {
+        fill: red;
+      }
+    }
+  }
+}
+
+.todoListItemCompleted {
+  background: rgb(180, 180, 180) !important;
+}

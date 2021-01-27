@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  padding: 0;
+  background: #4787ed;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  & h3 {
+    text-align: center;
+    margin: 0;
+    color: white;
+    padding: 20px 0;
+  }
+
+  & nav {
+    & a {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s all ease-out;
+
+      &:not(:last-of-type) {
+        margin-right: 30px;
+      }
+
+      &:hover {
+        color: #fcf7f779;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.active {
+  text-decoration: underline !important;
+}

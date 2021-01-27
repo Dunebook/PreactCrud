@@ -1,0 +1,21 @@
+.todoText {
+  width: 80%;
+  padding: 14px 20px 14px 20px;
+}
+
+.todoTextCompleted {
+  width: 100%;
+  text-decoration: line-through;
+}
+
+.todoActions {
+  width: 20%;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  & > *:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
