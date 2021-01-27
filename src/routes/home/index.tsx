@@ -2,7 +2,7 @@ import { FunctionalComponent, h, JSX } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import { useTodos } from "../../components/context";
 
-import EditedTodoItem from "../../components/editItem";
+import EditedTodoItem from "../../components/EditItem";
 import TodoItem from "../../components/CrudItem";
 
 import * as style from "./style.scss";
